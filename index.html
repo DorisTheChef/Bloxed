@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fred's House Building Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>🏠 Fred's House Building Adventure</h1>
+            <div class="game-info">
+                <div class="inventory">
+                    <h3>📦 Inventory</h3>
+                    <div class="inventory-item">
+                        <span>🪵 Wood: </span>
+                        <span id="wood-count">0</span>
+                    </div>
+                    <div class="inventory-item">
+                        <span>🐟 Fish: </span>
+                        <span id="fish-count">0</span>
+                    </div>
+                    <div class="inventory-item">
+                        <span>🍖 Food: </span>
+                        <span id="food-count">100</span>
+                    </div>
+                    <div class="inventory-item">
+                        <span>🟣 Purple Berries: </span>
+                        <span id="purple-berries-count">0</span>
+                    </div>
+                    <div class="inventory-item">
+                        <span>🩷 Pink Berries: </span>
+                        <span id="pink-berries-count">0</span>
+                    </div>
+                    <div class="inventory-item">
+                        <span>🪙 Coins: </span>
+                        <span id="coins-count">1</span>
+                    </div>
+                </div>
+                <div class="actions">
+                    <h3>⚡ Actions</h3>
+                    <button id="chop-btn" disabled>🪓 Chop Tree</button>
+                    <button id="fish-btn" disabled>🎣 Fish</button>
+                    <button id="collect-btn" disabled>🫐 Collect Berries</button>
+                    <button id="eat-btn">🍽️ Eat Fish</button>
+                    <button id="trade-btn" disabled>💰 Trade Item</button>
+                    <button id="build-btn" disabled>🔨 Build House</button>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <canvas id="game-canvas" width="800" height="600"></canvas>
+            <div class="instructions">
+                <p>🎮 Click on Fred to select him, then click on trees to chop or rivers to fish!</p>
+                <p>🏡 Collect 10 wood to build your house. Eat fish and berries to maintain your energy!</p>
+                <p>🏠 After building, click on the house to enter and change Fred's shirt color!</p>
+                <p>🥚 Fish lay eggs when caught - watch them hatch into new fish!</p>
+                <p>💰 Click on inventory items to select them for trading, then use the Trade button!</p>
+            </div>
+        </main>
+        
+        <div class="status">
+            <div id="game-message">Welcome to the forest! Help Fred build his house!</div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html> 
